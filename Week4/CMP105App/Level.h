@@ -3,6 +3,10 @@
 #include <SFML/Graphics.hpp>
 #include "Framework/Input.h"
 #include "Framework/GameObject.h"
+#include "Player.h"
+#include "Enemy.h"
+#include "Cursor.h"
+#include "Background.h"
 #include <string.h>
 #include <iostream>
 
@@ -26,7 +30,14 @@ private:
 	Input* input;
 
 	// Level objects
-	GameObject testSprite;
-	sf::Texture texture;
-
+	sf::Texture texturePlayer;
+	sf::Texture textureEnemy1;
+	sf::Texture textureEnemy2;
+	sf::Texture textureCursor;
+	sf::Texture textureBackground;
+	Player* player = new Player;
+	Enemy* enemy1 = new Enemy;
+	Enemy* enemy2 = new Enemy;
+	Cursor* cursor = new Cursor;
+	Background* background = new Background;
 };

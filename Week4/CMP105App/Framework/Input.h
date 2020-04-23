@@ -4,6 +4,7 @@
 // @author Paul Robertson
 
 #pragma once
+#include <iostream>
 
 class Input
 {
@@ -32,6 +33,8 @@ public:
 	bool isMouseLDown();
 	void setMouseRDown(bool down);
 	bool isMouseRDown();
+
+	void debug();
 	
 private:
 	// Array of booleans representing keys (pressed = true, released = false)

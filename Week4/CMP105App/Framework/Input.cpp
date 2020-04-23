@@ -78,3 +78,10 @@ bool Input::isMouseRDown()
 	return mouse.right;
 }
 
+void Input::debug() {
+	for (int i = 0; i < 256; i++) {
+		if (keys[i]) {
+			std::cout << i << std::endl;
+		}
+	}
+}
